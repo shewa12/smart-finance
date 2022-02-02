@@ -117,7 +117,7 @@ export default function DashboardComponent() {
                                 Decentralized Exchange
                                 </h3>
                                 <p className="small-title">
-                                Start trading on the Smartlink AMM
+                                Start trading on the SMART FINANCE AMM
                                 </p>
                                 <button className="btn btn-sm btn-secondary">
                                     Go to Vortex
@@ -178,7 +178,7 @@ export default function DashboardComponent() {
                                 </div>
                                 <div>
                                     <p className="small-title">
-                                    Try your luck in the Smartlink lottery
+                                    Try your luck in the SMART FINANCE lottery
                                     </p>
                                 </div>
                                 <button className="btn btn-secondary btn-sm" type="button">Go to Lottery</button>
@@ -227,7 +227,7 @@ export default function DashboardComponent() {
                             <div className="card-body pt-3">
                                 <div className="smak-right d-flex flex-column">
                                     <h3 className="medium-title">
-                                    Smartlink FAQs
+                                    SMART FINANCE FAQs
                                     </h3>
                                 </div>
                                 <div style={{width: '70%'}}>
