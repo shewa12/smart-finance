@@ -66,7 +66,7 @@ export default function DashboardComponent() {
                                     </div>
                                     <div className="col d-flex align-items-center">
                                         <button className="btn btn-primary custom-btn  bg-purple text-white">
-                                            Buy Smak
+                                            Buy SMF
                                         </button>
                                     </div>
                                 </div>
@@ -173,7 +173,7 @@ export default function DashboardComponent() {
                                 </div>
                                 <div className="smak-right d-flex flex-column">
                                     <h3 className="medium-title">
-                                    Win Smak
+                                    Win SMF
                                     </h3>
                                 </div>
                                 <div>
