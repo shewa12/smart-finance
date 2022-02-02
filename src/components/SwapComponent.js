@@ -6,7 +6,7 @@ function ListInfo() {
         <Fragment>
             <div className="d-flex justify-content-between">
                 <span>Minimum received</span>
-                <span>0.00 SMAK</span>
+                <span>0.00 SMF</span>
             </div>
             <div className="d-flex justify-content-between">
                 <span>Price impact</span>
@@ -68,7 +68,7 @@ export default function SwapComponent() {
                                     <div className="card-body d-flex flex-column">
                                         <div className="d-flex justify-content-between">
                                             <button className="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#token-popup">
-                                                SMAK <i className="bi bi-caret-down"></i>
+                                                SMF <i className="bi bi-caret-down"></i>
                                             </button>
                                             <input placeholder="0.0" className="main-bg"  style={{border: 'none', textAlign: 'right',fontSize: '24px', 'color': '#fff', outline: 'none'}}/>
                                         </div>
@@ -101,10 +101,10 @@ export default function SwapComponent() {
                     <div className="col-lg-8 swap-chart">
                         <div>
                             <p className="medium-title">
-                            <i className="bi bi-currency-bitcoin"></i> XTZ / SMAK
+                            <i className="bi bi-currency-bitcoin"></i> XTZ / SMF
                             </p>
                             <p className="medium-title">
-                            185.388306 SMAK <span className="badge bg-success">
+                            185.388306 SMF <span className="badge bg-success">
                             +0.3528%
                             </span>
                             <span className="text-success" style={{fontSize: '13px', paddingLeft: '5px'}}>Past 24 Hours</span>

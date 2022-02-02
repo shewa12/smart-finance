@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import '../scss/dashboard.scss';
+import dataImage from '../../src/data-image.png';
 
 export default function DashboardComponent() {
     return(
@@ -11,7 +12,7 @@ export default function DashboardComponent() {
                         <div className="card main-bg">
                             <div className="card-body d-flex">
                                 <div className="smak-left d-flex flex-column">
-                                    <p className="text-white">SMAK</p>
+                                    <p className="text-white">SMF</p>
                                     <p className="text-gray">
                                     Live price
                                     </p>
@@ -21,12 +22,12 @@ export default function DashboardComponent() {
                                 </div>
                                 <div className="smak-right d-flex flex-column">
                                     <p className="text-white"><i className="bi bi-wallet2"></i></p>
-                                    <p className="text-gray">SMAK Balance</p>
+                                    <p className="text-gray">SMF Balance</p>
                                     <p className="text-white">0</p>
                                 </div>
                             </div>
                             <div className="d-grid gap-2 p-3">
-                                <button className="btn btn-primary custom-btn lite-gray text-white" type="button">Connect Wallet</button>
+                                <button className="btn btn-primary custom-btn lite-gray text-white" type="button" data-bs-toggle="modal" data-bs-target="#connect-popup">Connect Wallet</button>
                             </div>
                         </div>
                     </div>
@@ -80,7 +81,7 @@ export default function DashboardComponent() {
                             <div className="card-body">
                                 <div className="d-flex justify-content-between" style={{columnGap: '10px'}}>
                                     <div className="text-white">
-                                    SMARTLINK TVL $ 8,623,035.36
+                                    SMART FINANCE TVL $ 8,623,035.36
                                     </div>
                                     <div>
                                         <button className="btn btn-secondary btn-sm">
@@ -136,10 +137,10 @@ export default function DashboardComponent() {
                                 <div className="text-with-boxes d-flex" style={{columnGap: '10px'}}>
                                     <div style={{marginRight: '20px'}}>
                                         <p className="medium-title">
-                                        Earn SMAK
+                                        Earn SMF
                                         </p>
                                         <p className="small-title">
-                                        Put your SMAK to work and get rewards!
+                                        Put your SMF to work and get rewards!
                                         </p>
                                     </div>
                                     <div className="small-card d-flex flex-column p2 align-items-center">
@@ -245,6 +246,56 @@ export default function DashboardComponent() {
                 </div>
                 {/* bottom three cards end */}
             </div>
+            {/* token modal  */}
+            <div className="modal fade" id="connect-popup" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-scrollable">
+                <div className="modal-content" style={{borderRadius: '20px'}}>
+                    <div className="modal-header" style={{border: 'none'}}>
+                    <p className="text-center modal-title fs-6" id="exampleModalLabel">
+                        Choose your preferred wallet
+                    </p>
+                    <i type="button" className="bi bi-x-lg" data-bs-dismiss="modal" aria-label="Close"></i>
+                    </div>
+                    <div className="modal-body">
+                        <p className="mini-text">
+                        Browser Extensions
+                        </p>
+                        <div className="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <li className="fs-6 fw-bold">Spire</li>
+                                <li className="tiny-text">Not installed</li>
+                            </div>
+                            <img src={dataImage} alt="data"/>
+                        </div>
+                        <div className="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <li className="fs-6 fw-bold">Temple Wallet</li>
+                                <li className="tiny-text">Not installed</li>
+                            </div>
+                            <img src={dataImage} alt="data"/>
+                        </div>
+                        <div className="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <li className="fs-6 fw-bold">Nan Wallet</li>
+                            </div>
+                            <img src={dataImage} alt="data"/>
+                        </div>
+                        <div className="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <li className="fs-6 fw-bold">Autonomy Wallet</li>
+                            </div>
+                            <img src={dataImage} alt="data"/>
+                        </div>
+                        <div className="d-grid col-6 mx-auto mt-4">
+                        <button className="btn btn-sm border border-secondary bg-white">
+                        Pair wallet on another device
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            {/* token modal end */}
         </Fragment>
     );
 }

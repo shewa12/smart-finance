@@ -32,13 +32,13 @@ export default function StakingComponent() {
                                 </div>
                                 <div className="d-flex justify-content-between mt-4" style={{fontSize: '12px'}}>
                                     <span className="text-gray">
-                                    Balance: 0 SMAK
+                                    Balance: 0 SMF
                                     </span>
-                                    <a className="text-gray">Use Max</a>
+                                    <span className="text-gray">Use Max</span>
                                 </div>
                                 <div className="d-grid mt-2">
                                     <input className="p-2 main-bg main-border text-white" placeholder="0" style={{borderRadius: '20px', outline: 'none'}}/>
-                                    <p className="mt-1" style={{color: '#e6beff', fontSize: '13px', textAlign: 'right'}}>Min. 1 SMAK ~ 0.0187 USD</p>
+                                    <p className="mt-1" style={{color: '#e6beff', fontSize: '13px', textAlign: 'right'}}>Min. 1 SMF ~ 0.0187 USD</p>
                                 </div>
                                 <div className="d-grid mt-2">
                                     <button className="btn btn-primary custom-btn lite-gray text-white" type="button">Connect Wallet</button>
@@ -57,28 +57,28 @@ export default function StakingComponent() {
                                         <div className="d-flex justify-content-around align-items-center" style={{textAlign: 'center'}}>
                                             <div>
                                                 <p className="fs-6 text-gray">
-                                                My SMAK Balance
+                                                My SMF Balance
                                                 </p>
                                                 <p className="fs-5 text-white">
-                                                0 SMAK
+                                                0 SMF
                                                 </p>
                                             </div>
                                             <div className="separator"></div>
                                             <div>
                                                 <p className="fs-6 text-gray">
-                                                My SMAK Balance
+                                                My SMF Balance
                                                 </p>
                                                 <p className="fs-5 text-white">
-                                                0 SMAK
+                                                0 SMF
                                                 </p>
                                             </div>
                                             <div className="separator"></div>
                                             <div>
                                                 <p className="fs-6 text-gray">
-                                                My SMAK Balance
+                                                My SMF Balance
                                                 </p>
                                                 <p className="fs-5 text-white">
-                                                0 SMAK
+                                                0 SMF
                                                 </p>
                                             </div>
                                         </div>
@@ -118,13 +118,13 @@ export default function StakingComponent() {
                 </div>
                 <div className="d-flex my-4 align-items-center" style={{columnGap: '25px'}}>
                     <span className="text-white fs-6">Dashboard</span>
-                    <span className="fs-5" style={{color: '#cfa8ff'}}>SMAK Staking Data</span>
+                    <span className="fs-5" style={{color: '#cfa8ff'}}>SMF Staking Data</span>
                 </div>
                 <div className="d-flex smak-three-cards">
                     <div className="card custom-card main-bg">
                         <div className="card-body" style={{padding: '20px 30px 10px 30px', marginRight: '25px'}}>
                             <p className="text-gray fs-6">
-                            $SMAK Price
+                            $SMF Price
                             </p>
                             <p className="text-white fs-5">
                             $0.019 USD <span className="badge bg-success px-2">7.89%</span>
@@ -134,7 +134,7 @@ export default function StakingComponent() {
                     <div className="card custom-card main-bg">
                         <div className="card-body" style={{padding: '20px 30px 10px 30px', marginRight: '25px'}}>
                             <p className="text-gray fs-6">
-                            $SMAK Price
+                            $SMF Price
                             </p>
                             <p className="text-white fs-5">
                             $0.019 USD <span className="badge bg-success px-2">7.89%</span>
@@ -144,7 +144,7 @@ export default function StakingComponent() {
                     <div className="card custom-card main-bg">
                         <div className="card-body" style={{padding: '20px 30px 10px 30px', marginRight: '25px'}}>
                             <p className="text-gray fs-6">
-                            $SMAK Price
+                            $SMF Price
                             </p>
                             <p className="text-white fs-5">
                             $0.019 USD <span className="badge bg-success px-2">7.89%</span>
@@ -157,7 +157,7 @@ export default function StakingComponent() {
                         <div className="card custom-card main-bg">
                             <div className="card-body" style={{minHeight: '415px'}}>
                                 <p className="fs-5 text-white">
-                                SMAK Staking Analysis
+                                SMF Staking Analysis
                                 </p>
                                 <p className="fs-6 text-white">
                                 Coming soon...
@@ -169,7 +169,7 @@ export default function StakingComponent() {
                         <div className="card custom-card main-bg">
                             <div className="card-body">
                                 <p className="fs-5 text-white">
-                                SMAK Staking Contract Details
+                                SMF Staking Contract Details
                                 </p>
                                 <div className="mt-4">
                                     <div className="d-flex justify-content-between">
@@ -193,7 +193,7 @@ export default function StakingComponent() {
                                         Circulating
                                         </p>
                                         <p className="fs-6 text-white">
-                                        468,771,984 SMAK
+                                        468,771,984 SMF
                                         </p>
                                     </div>
                                     <div className="d-flex justify-content-between">
@@ -214,10 +214,10 @@ export default function StakingComponent() {
                                     </div>
                                     <div className="d-flex justify-content-between">
                                         <p className="fs-6 text-white">
-                                        SMAK burned
+                                        SMF burned
                                         </p>
                                         <p className="fs-6 text-white">
-                                        11,092,723.82 SMAK
+                                        11,092,723.82 SMF
                                         </p>
                                     </div>
                                     <div className="d-flex justify-content-between">
@@ -225,7 +225,7 @@ export default function StakingComponent() {
                                         Total supply
                                         </p>
                                         <p className="fs-6 text-white">
-                                        896,083,333 SMAK
+                                        896,083,333 SMF
                                         </p>
                                     </div>
                                 </div>
