@@ -1,0 +1,60 @@
+.stacking-wrapper {
+    margin-top: 50px;
+    .card.main-bg{
+        border-radius: 13px !important;
+        border: 1px solid rgb(193 186 186 / 13%);
+        .card-body {
+            padding: 40px 20px;
+        }
+    }
+    .mini-nav {
+        background-color: #262638;
+        padding: 15px 10px;
+        border-radius: 15px;
+        color: #fff;
+        span {
+            min-width: 150px;
+            text-align: center;
+            cursor: pointer;
+            &.active {
+                background-color: #2f3042;
+                padding: 5px 10px;
+                border-radius: 15px;
+            }
+        }
+    }
+    .col-lg-7 {
+        .row {
+            display: flex;
+            column-gap: 20px;
+            & > .col-lg-4 {
+                width: 32%;
+                margin-right: -8px;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .smak-three-cards {
+        justify-content: space-between;
+        @media screen and (max-width: 1199.98px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            width: 32%;
+            margin-right: 1px;
+            @media screen and (max-width: 1199.98px) {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .list-data {
+        @media screen and (max-width: 992px) {
+            margin-top: 10px;
+        }
+    }
+}

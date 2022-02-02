@@ -1,0 +1,20 @@
+.scanner-wrapper {
+    margin-top: 50px;
+    
+    input {
+        @media screen and (max-width: 1199.98px) {
+            margin-left: 20px;
+        }
+    }
+    button {
+        width: 210px; 
+        border-radius: 20px; 
+        height: 35px;
+        @media screen and (max-width: 768px) {
+            width: 100% !important;
+        }
+        @media screen and (max-width: 1399.98px) {
+            width: auto;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@import './var.scss';
+
+.nav-wrapper {
+    
+    .header-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav {
+        background-color: $liteGray;
+        border-radius: 13px;
+    }
+    li.active {
+        background-color: $menuActive;
+        border-radius: 13px;
+    }
+    @media screen and (max-width: 768px) {
+
+        .header-menu {
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+.dropdown-menu {
+    border-radius: 13px !important;
+    border: 1px solid rgb(193 186 186 / 13%);
+    li a:hover {
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,53 @@
+@import './var.scss';
+.custom-modal {
+    .modal-content {
+        background-color: $mainBg;
+        border: 1px solid #484d5f;
+        border-radius: 20px;
+        .modal-header {
+            border-bottom: none;
+        }
+        .custom-input input {
+            background-color: #2a2b3e;
+            outline: purple;
+            color: #fff;
+            border: none;
+            font-size: 13px;
+            border-radius: 15px;
+            &:focus {
+                border: 1px solid $bgPurple;
+            }
+        }
+        .image-with-li {
+            max-height: 200px;
+            overflow-y: auto;
+            .d-flex {
+                column-gap: 12px;
+                margin-bottom: 10px;
+                align-items: center;
+            }
+            img {
+                width: 23px;
+                height: 23px;
+                border-radius: 100%;
+            }
+            li {
+                list-style: none;
+                font-size: 14px;
+            }
+            li.text-gray {
+                font-size: 13px;
+            }
+        }
+        .tokens-frequently-paired {
+            button {
+                border-radius: 20px;
+                img {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}

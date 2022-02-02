@@ -1,0 +1,115 @@
+@import './var.scss';
+@mixin  custom-card {
+    height: 232px;
+    border-radius: 13px !important;
+    border: 1px solid rgb(193 186 186 / 13%);  
+}
+.dashboard-wrapper {
+    margin-top: 50px;
+
+    .three-cards {
+        @media screen and (max-width: 1199.98px) {
+            .col-lg-4 {
+                margin-bottom: 20px;
+            }
+        }
+        .card.main-bg{
+            @include custom-card();
+            @media screen and (max-width: 1199.98px) {
+                height: auto;
+            }
+        }
+        .smak-right {
+            margin-left: 40% !important;
+        }
+        .second-card {
+            .row {
+                column-gap: 10px;
+            }
+            .col {
+                border: 0.5px solid rgb(172 174 181 / 43%);
+                border-radius: 13px;
+                padding: 2px 10px;
+            }
+        }
+    }
+    .two-cards {
+        margin-top: 30px;
+        .card.main-bg{
+            height: 250px;
+            border-radius: 13px !important;
+            border: 1px solid rgb(193 186 186 / 13%);
+            .card-body {
+                padding: 40px 30px;
+            }
+            @media screen and (max-width: 1199.98px) {
+                height: auto;
+            }
+        }
+        .first-card {
+            .card {
+                background-image: url(https://app.smartlink.so/img/vortex-bg.a78f2302.webp);
+                background-size: cover;
+                overflow: hidden;
+                background-repeat: no-repeat;
+            }
+        }
+        .two-card {
+
+            .card {
+                background-image: url(https://app.smartlink.so/img/earn-smak-bg.1a57db4c.webp);
+                background-size: cover;
+                overflow: hidden;
+                background-repeat: no-repeat;
+
+            }
+            .small-card {
+                background-color: $mainBg;
+                border-radius: 13px !important;
+                border: 1px solid rgb(193 186 186 / 13%);
+                padding: 5px 30px;
+                font-weight: bold;
+                @media screen and (max-width: 1199.98px) {
+                    height: 80px;
+                }
+            }  
+        }
+        @media screen and (max-width: 1199.98px) {
+            .col-lg-6 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .bottom-three-cards {
+        margin-top: 50px;
+        .card.main-bg{
+            @include custom-card();
+        }
+        .first-card {
+            .card-body {
+                background-image: url(https://app.smartlink.so/img/win-smak-bg.91e8b8b3.webp);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: right;
+            }
+        }
+        .second-card {
+            .row {
+                column-gap: 10px;
+            }
+            .col {
+                border: 0.5px solid rgb(172 174 181 / 43%);
+                border-radius: 13px;
+                padding: 2px 10px;
+            }
+        }
+        .third-card {
+            .card-body {
+                background-image: url(https://app.smartlink.so/img/smartlink-faqs-bg.1e6f4e47.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: right;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import './mixins.scss';
+@import './custom-modal.scss';
+
+.swap-wrapper {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    .left-side {
+        .custom-card {
+            border-radius: 13px !important;
+            border: 1px solid rgb(193 186 186 / 13%);
+            .mini-nav {
+                background-color: #262638;
+                padding: 15px 10px;
+                border-radius: 15px;
+                color: #fff;
+                span {
+                    cursor: pointer;
+                    &.active {
+                        background-color: #2f3042;
+                        padding: 5px 10px;
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+        .tolerance {
+            p {
+                @include mini-text(#c1bcff);
+            }
+        }
+        .bottom-info {
+            span {
+                @include mini-text(#dbd2d2);
+            }
+            p {
+                @include mini-text(#dbd2d2);
+            }
+        }
+    }
+}
